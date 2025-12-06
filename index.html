@@ -1,0 +1,156 @@
+<!--
+Project: Internet-Programming-Lab
+This file bundle shows example files for adding Unit 1 as a webpage and linking pages.
+Copy each "FILE: ..." section into the matching file in your repository.
+-->
+
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Internet Programming Laboratory</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">Internet Programming Laboratory</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="units/unit1/index.html">Unit 1</a></li>
+          <!-- Add more units here -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Welcome</h2>
+      <p>This repository contains lab material for HTML, CSS and Java. Click the Unit links in the nav to open the unit pages.</p>
+    </section>
+
+    <section>
+      <h3>Quick start</h3>
+      <ol>
+        <li>Open <code>units/unit1/index.html</code> to see Unit 1 content.</li>
+        <li>Edit or add new unit files under <code>units/</code>.</li>
+        <li>Commit &amp; push to GitHub. Optionally enable GitHub Pages to publish.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Internet Programming Laboratory — For learning purposes</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+<!-- FILE: units/unit1/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unit 1 — Introduction to HTML</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="../../index.html">Internet Programming Laboratory</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="index.html">Unit 1</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container unit">
+    <h2>Unit 1 — Introduction to HTML</h2>
+
+    <section>
+      <h3>Learning Objectives</h3>
+      <ul>
+        <li>Understand the structure of an HTML document</li>
+        <li>Use common tags: headings, paragraphs, lists, links, images</li>
+        <li>Create simple forms and tables</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Topics</h3>
+      <ol>
+        <li>HTML document structure (<code>&lt;!doctype&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>)</li>
+        <li>Text elements: <code>&lt;h1&gt;..&lt;/h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
+        <li>Lists: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>)</li>
+        <li>Links and images: <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></li>
+        <li>Basic form: <code>&lt;form&gt;</code> with <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code></li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Example: A small contact form</h3>
+      <div class="example">
+        <form action="#" method="get">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" placeholder="you@example.com" type="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Build a simple profile page with a picture, bio, and list of hobbies.</li>
+        <li>Create a product table using the <code>&lt;table&gt;</code> tag.</li>
+      </ol>
+    </section>
+
+    <p><a href="../../index.html">← Back to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Unit 1 — Internet Programming Laboratory</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+<!-- FILE: css/styles.css -->
+/* Basic styles for the lab site */
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;margin:0;color:#222}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.site-header{background:#f4f4f4;padding:.5rem 0;border-bottom:1px solid #e0e0e0}
+.site-header h1{margin:0;font-size:1.1rem}
+.site-header a{color:inherit;text-decoration:none}
+.nav{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
+.nav a{text-decoration:none}
+.unit h2{margin-top:0}
+.example{background:#fbfbfb;border:1px solid #eee;padding:1rem;margin:1rem 0}
+form label{display:block;margin-top:.6rem;font-weight:600}
+input,textarea{width:100%;padding:.5rem;margin-top:.25rem;border:1px solid #ccc;border-radius:4px}
+button{margin-top:.8rem;padding:.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+.site-footer{background:#fafafa;padding:.8rem 0;border-top:1px solid #eee;margin-top:2rem;text-align:center;font-size:.9rem}
+
+/* Responsive tweaks */
+@media(min-width:700px){.nav{gap:1.5rem}}
