@@ -13,60 +13,41 @@ This repository includes:
 🟦 HTML
 
 Basic structure of a webpage
-
 Headings, paragraphs, lists
-
 Links and images
-
 Tables and forms
-
 Semantic HTML elements
-
 Small practice tasks
 
 🟩 CSS
 
 Selectors and properties
-
 Colors, fonts, and text styling
-
 Box model
-
 Flexbox & Grid layout
-
 Transitions and animations
-
 Page styling exercises
 
 🟧 Java
 
 Basic syntax & OOP concepts
-
 Classes, objects, inheritance
-
 Exception handling
-
 File handling
-
 Applets / GUI programs
-
 Networking basics
-
 Lab experiments
 
 🎯 Purpose
 
 This repository is created to:
-
 Help students easily learn Internet Programming
-
 Provide clean and simple code examples
-
 Serve as a reference for lab work and assignments
-
 Build a strong foundation in web development and Java programming
 
 📂 Folder Structure
+
 Internet-Programming-Lab/
 │
 ├── HTML/
